@@ -398,7 +398,7 @@ class Studentregister_List_Table extends WP_List_Table {
 				$sommerjobb = false;
 				$fastjobber = get_user_meta($user->ID, 'fastjobb', true);
 				$fastjobb = false;
-				if (is_array($somerjobber)) {
+				if (is_array($sommerjobber)) {
 					if (in_array(get_current_user_id(), $sommerjobber)) {
 						$sommerjobb = true;
 					}
